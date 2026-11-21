@@ -49,7 +49,7 @@ nav a:hover, nav a.active {
 /* Home Banner */
 .hero {
     min-height: 390px;
-    background: linear-gradient(#10294d99, #10294d99), url("images/hero-building.jpg") center/cover;
+    background: linear-gradient(#10294d99, #10294d99), url("hero-building.jpg") center/cover;
     padding: 60px 8%;
     color: white;
 }
@@ -135,7 +135,7 @@ section {
 .page-banner {
     color: white;
     padding: 40px 8%;
-    background: linear-gradient(#10294d99, #10294d99), url("images/banner-building.jpg") center/cover;
+    background: linear-gradient(#10294d99, #10294d99), url("banner-building.jpg") center/cover;
 }
 
 .page-banner h1 {
