@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #222b3a;
+    line-height: 1.6;
+    background: #f7f9fc;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 16px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #123d78;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+nav a {
+    color: #222b3a;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+    color: #1261d8;
+}
+
+/* Home Banner */
+.hero {
+    min-height: 390px;
+    background: linear-gradient(#10294d99, #10294d99), url("images/hero-building.jpg") center/cover;
+    padding: 60px 8%;
+    color: white;
+}
+
+.hero-content {
+    max-width: 560px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: #1261d8;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    padding: 45px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: #142d52;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* Services and Projects */
+.services, .project-grid, .director-container {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+}
+
+.service, .project-card, .director-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e5eaf2;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.service h3, .project-card h3 {
+    color: #142d52;
+}
+
+.symbol {
+    font-size: 34px;
+    color: #1261d8;
+}
+
+/* About */
+.about-preview, .about-layout {
+    background: #edf3fb;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-preview img, .about-layout img {
+    width: 45%;
+}
+
+.about-preview h2, .about-layout h2 {
+    color: #142d52;
+}
+
+/* Page Banner */
+.page-banner {
+    color: white;
+    padding: 40px 8%;
+    background: linear-gradient(#10294d99, #10294d99), url("images/banner-building.jpg") center/cover;
+}
+
+.page-banner h1 {
+    font-size: 34px;
+}
+
+/* Project Cards */
+.project-card {
+    padding: 0 0 20px;
+    text-align: left;
+    overflow: hidden;
+}
+
+.project-card img {
+    width: 100%;
+    height: 250px;
+}
+
+.project-card h3, .project-card p, .project-card a {
+    margin: 10px 15px;
+}
+
+/* Leadership */
+.leadership-section {
+    padding: 50px 8%;
+    background: #f8f9fa;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.director-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.director-card h3 {
+    color: #17365D;
+}
+
+.director-card p {
+    color: #b38b45;
+    font-weight: bold;
+}
+
+/* Contact */
+.contact-box {
+    background: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 25px;
+}
+
+/* Footer */
+footer {
+    background: #142d52;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    header, .services, .project-grid,
+    .director-container, .about-preview, .about-layout {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .about-preview img, .about-layout img {
+        width: 100%;
+    }
+}
